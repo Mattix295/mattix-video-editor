@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mattix | Video Editor</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <div class="background-glow"></div>
+
+  <header>
+    <div class="logo">MATTIX</div>
+
+    <nav
+      <a href="#projects">Projets</a>
+      <a href="#about">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-left fade-up">
+      <h1>VIDEO EDITOR</h1>
+
+      <p>
+        Monteur spécialisé en Shorts YouTube & TikTok.
+        Création de vidéos dynamiques, virales et ultra engageantes.
+      </p>
+
+      <div class="buttons">
+        <a href="https://youtube.com/@youtubemattix?si=kmfI3IMWZouKOOl3" target="_blank" class="btn">
+          YouTube
+        </a>
+
+        <a href="https://discord.gg/EJmjdPTdAQ" target="_blank" class="btn btn-outline">
+          Discord
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-right fade-up">
+      <div class="profile-card">
+       <img src="profile.png" alt="Mattix"/>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+
+    <h2 class="section-title fade-up">MES PROJETS</h2>
+
+    <div class="projects-grid">
+
+      <div class="project-card fade-up">
+        <iframe src="https://www.youtube.com/embed/IfSKgsxRmVE" allowfullscreen></iframe>
+          
+      </div>
+
+      <div class="project-card fade-up">
+        <iframe src="https://www.youtube.com/embed/IfSKgsxRmVE" allowfullscreen></iframe>
+
+      <div class="project-card fade-up">
+        <iframe src="https://www.youtube.com/embed/de2U7qIxbXU" allowfullscreen></iframe>
+      </div>
+
+      <div class="project-card fade-up">
+        <iframe src="https://www.youtube.com/embed/pLxwj2AMf_M" allowfullscreen></iframe>
+      </div>
+
+    </div>
+</section>
+
+
+<section class="prices">
+    <h2>MES PRIX</h2>
+
+    <div class="price-card">
+        <h3>Short</h3>
+        <p>1€</p>
+    </div>
+
+    <div class="price-card">
+        <h3>Intro</h3>
+        <p>2€</p>
+    </div>
+
+    <div class="price-card">
+        <h3>Vidéo 5 min</h3>
+        <p>1€</p>
+    </div>
+
+</section>
+  
+<section class="clients">
+
+    <h2>ILS M'ONT FAIT CONFIANCE</h2>
+
+    
+<div class="client-card">
+
+    <img src="logo3.png" alt="">
+
+    <h3>Gleckyx</h3>
+
+    <p>Avant 1K|Mnt 336 abonnés</p>
+
+</div>
+
+<div class="client-card">
+
+    <img src="logo1.png" alt="">
+
+    <h3>Moi même</h3>
+
+    <p>1220 abonnés</p> 
+   
+  </div>
+  <div class="client-card">
+
+    <img src="logo2.png" alt="">
+
+    <h3>Peut-être toi ?</h3>
+
+  <p>Le prochain ? 👀</p>
+
+</div>
+</div>
+</div>
+</section>
+  <section id="about" class="about fade-up">
+
+    <h2 class="section-title">À PROPOS</h2>
+
+    <p>
+      Je suis Mattix, monteur vidéo spécialisé dans les formats courts
+      YouTube Shorts et TikTok.
+      Je crée des montages modernes, rapides et captivants avec des
+      effets dynamiques et un style futuriste.
+    </p>
+
+  </section>
+
+  <section id="contact" class="contact fade-up">
+
+    <h2 class="section-title">CONTACT</h2>
+
+    <div class="contact-buttons">
+
+      <a href="https://youtube.com/@youtubemattix?si=kmfI3IMWZouKOOl3"
+         target="_blank"
+         class="btn">
+         Ma chaîne
+      </a>
+
+      <a href="https://discord.gg/EJmjdPTdAQ"
+         target="_blank"
+         class="btn btn-outline">
+         Discord
+      </a>
+<div class="contact-discord">
+  <button class="btn" onclick="copyDiscord()">Me MP Discord</button>
+
+  <p id="discord-name" style="display:none;">
+    Discord : Mattix | Monteur Vidéo
+  </p>
+</div>
+    
+
+  </section>
+<script>
+function copyDiscord() {
+  const text = "Mattix | Monteur Vidéo";
+
+  navigator.clipboard.writeText(text);
+
+  document.getElementById("discord-name").style.display = "block";
+
+  alert("Discord copié : " + text);
+}
+</script>
+</body>
+</html>
